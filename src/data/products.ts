@@ -1,0 +1,447 @@
+import { Product } from '@/types/product';
+
+export const products: Product[] = [
+  // Men's Products
+  {
+    id: 'm1',
+    name: 'Classic White T-Shirt',
+    price: 29.99,
+    description: 'A comfortable and versatile white t-shirt made from 100% organic cotton.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['White', 'Black', 'Gray']
+  },
+  {
+    id: 'm2',
+    name: 'Slim Fit Jeans',
+    price: 59.99,
+    description: 'Modern slim fit jeans with a comfortable stretch for all-day wear.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.2,
+    sizes: ['30', '32', '34', '36'],
+    colors: ['Blue', 'Black']
+  },
+  {
+    id: 'm3',
+    name: 'Casual Blazer',
+    price: 89.99,
+    description: 'Versatile blazer that can be dressed up or down.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['38', '40', '42', '44'],
+    colors: ['Navy', 'Gray', 'Black']
+  },
+  {
+    id: 'm4',
+    name: 'Hooded Sweatshirt',
+    price: 49.99,
+    description: 'Comfortable hoodie perfect for casual wear and workouts.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1787035/pexels-photo-1787035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Gray', 'Black', 'Navy']
+  },
+  {
+    id: 'm5',
+    name: 'Formal Dress Shirt',
+    price: 69.99,
+    description: 'Classic fit dress shirt suitable for business and formal occasions.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['White', 'Blue', 'Pink']
+  },
+  {
+    id: 'm6',
+    name: 'Cargo Pants',
+    price: 54.99,
+    description: 'Durable cargo pants with multiple pockets for practical wear.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1176618/pexels-photo-1176618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.1,
+    sizes: ['30', '32', '34', '36'],
+    colors: ['Khaki', 'Olive', 'Black']
+  },
+  {
+    id: 'm7',
+    name: 'Wool Sweater',
+    price: 79.99,
+    description: 'Warm wool blend sweater perfect for cold weather.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1804075/pexels-photo-1804075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Gray', 'Navy', 'Burgundy']
+  },
+  {
+    id: 'm8',
+    name: 'Denim Jacket',
+    price: 84.99,
+    description: 'Classic denim jacket with a modern fit.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Blue', 'Black', 'Light Blue']
+  },
+  {
+    id: 'm9',
+    name: 'Polo Shirt',
+    price: 39.99,
+    description: 'Classic polo shirt made from breathable cotton.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1232459/pexels-photo-1232459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Navy', 'White', 'Red']
+  },
+  {
+    id: 'm10',
+    name: 'Track Jacket',
+    price: 64.99,
+    description: 'Sporty track jacket perfect for workouts or casual wear.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Black', 'Blue', 'Red']
+  },
+  {
+    id: 'm11',
+    name: 'Chino Pants',
+    price: 59.99,
+    description: 'Classic chino pants perfect for casual and semi-formal occasions.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['30', '32', '34', '36'],
+    colors: ['Khaki', 'Navy', 'Gray']
+  },
+  {
+    id: 'm12',
+    name: 'Quilted Vest',
+    price: 69.99,
+    description: 'Lightweight quilted vest for layering in transitional weather.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1689731/pexels-photo-1689731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.2,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Navy', 'Black', 'Olive']
+  },
+  {
+    id: 'm13',
+    name: 'Swim Shorts',
+    price: 34.99,
+    description: 'Quick-dry swim shorts with modern patterns.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1266855/pexels-photo-1266855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Blue', 'Orange', 'Green']
+  },
+  {
+    id: 'm14',
+    name: 'Leather Belt',
+    price: 149,
+    description: 'Genuine leather belt with a classic buckle.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['32', '34', '36', '38'],
+    colors: ['Brown', 'Black']
+  },
+  {
+    id: 'm15',
+    name: 'Winter Coat',
+    price: 149.99,
+    description: 'Warm winter coat with water-resistant exterior.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Black', 'Navy', 'Gray']
+  },
+  {
+    id: 'm16',
+    name: 'Linen Shirt',
+    price: 54.99,
+    description: 'Breathable linen shirt perfect for summer.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/769733/pexels-photo-769733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['White', 'Blue', 'Beige']
+  },
+  {
+    id: 'm17',
+    name: 'Athletic Shorts',
+    price: 29.99,
+    description: 'Lightweight athletic shorts with moisture-wicking technology.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Black', 'Gray', 'Navy']
+  },
+  {
+    id: 'm18',
+    name: 'Dress Slacks',
+    price: 79.99,
+    description: 'Professional dress slacks with perfect fit.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['30', '32', '34', '36'],
+    colors: ['Black', 'Gray', 'Navy']
+  },
+  {
+    id: 'm19',
+    name: 'Rain Jacket',
+    price: 89.99,
+    description: 'Waterproof rain jacket with hood.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1833082/pexels-photo-1833082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Yellow', 'Blue', 'Black']
+  },
+  {
+    id: 'm20',
+    name: 'Henley Shirt',
+    price: 34.99,
+    description: 'Casual henley shirt with button placket.',
+    category: 'men',
+    image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['S', 'M', 'L', 'XL'],
+    colors: ['Gray', 'Navy', 'Burgundy']
+  },
+
+  // Women's Products
+  {
+    id: 'w1',
+    name: 'Floral Summer Dress',
+    price: 399,
+    description: 'Beautiful floral dress perfect for summer days.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.8,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Blue', 'Pink', 'Yellow']
+  },
+  {
+    id: 'w2',
+    name: 'Leather Jacket',
+    price: 129.99,
+    description: 'Premium quality leather jacket with a modern cut.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['S', 'M', 'L'],
+    colors: ['Black', 'Brown']
+  },
+  {
+    id: 'w3',
+    name: 'Knit Sweater',
+    price: 279,
+    description: 'Cozy knit sweater for colder days.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Cream', 'Gray', 'Blue']
+  },
+  {
+    id: 'w4',
+    name: 'High-Waist Jeans',
+    price: 349,
+    description: 'Stylish high-waisted jeans with a flattering fit.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1082528/pexels-photo-1082528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['2', '4', '6', '8', '10'],
+    colors: ['Blue', 'Black', 'Light Blue']
+  },
+  {
+    id: 'w5',
+    name: 'Blouse',
+    price: 44.99,
+    description: 'Elegant blouse suitable for work or casual wear.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['White', 'Pink', 'Blue']
+  },
+  {
+    id: 'w6',
+    name: 'Maxi Skirt',
+    price: 54.99,
+    description: 'Flowing maxi skirt with elegant design.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1761683/pexels-photo-1761683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'Floral']
+  },
+  {
+    id: 'w7',
+    name: 'Yoga Pants',
+    price: 39.99,
+    description: 'High-performance yoga pants with moisture-wicking fabric.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.8,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Gray', 'Navy']
+  },
+  {
+    id: 'w8',
+    name: 'Cardigan',
+    price: 59.99,
+    description: 'Soft, comfortable cardigan for layering.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1844012/pexels-photo-1844012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Gray', 'Beige', 'Black']
+  },
+  {
+    id: 'w9',
+    name: 'Jumpsuit',
+    price: 79.99,
+    description: 'Stylish jumpsuit perfect for any occasion.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'Green']
+  },
+  {
+    id: 'w10',
+    name: 'Blazer Dress',
+    price: 89.99,
+    description: 'Professional blazer dress for a sophisticated look.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1821095/pexels-photo-1821095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'Gray']
+  },
+  {
+    id: 'w11',
+    name: 'Summer Romper',
+    price: 49.99,
+    description: 'Comfortable and stylish romper for warm days.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Floral', 'Blue', 'Pink']
+  },
+  {
+    id: 'w12',
+    name: 'Pencil Skirt',
+    price: 59.99,
+    description: 'Classic pencil skirt for professional wear.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1848872/pexels-photo-1848872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'Gray']
+  },
+  {
+    id: 'w13',
+    name: 'Crop Top',
+    price: 24.99,
+    description: 'Trendy crop top for casual outings.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.3,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['White', 'Black', 'Pink']
+  },
+  {
+    id: 'w14',
+    name: 'Palazzo Pants',
+    price: 64.99,
+    description: 'Flowing palazzo pants with wide legs.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1852382/pexels-photo-1852382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.6,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'White']
+  },
+  {
+    id: 'w15',
+    name: 'Denim Shorts',
+    price: 39.99,
+    description: 'Classic denim shorts for summer style.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.4,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Blue', 'Light Blue', 'Black']
+  },
+  {
+    id: 'w16',
+    name: 'Wrap Dress',
+    price: 79.99,
+    description: 'Elegant wrap dress for any occasion.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1755428/pexels-photo-1755428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Red', 'Black', 'Navy']
+  },
+  {
+    id: 'w17',
+    name: 'Tank Top',
+    price: 19.99,
+    description: 'Basic tank top for layering or solo wear.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.2,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['White', 'Black', 'Gray']
+  },
+  {
+    id: 'w18',
+    name: 'Winter Parka',
+    price: 159.99,
+    description: 'Warm winter parka with faux fur hood.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1661417/pexels-photo-1661417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.8,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Navy', 'Olive']
+  },
+  {
+    id: 'w19',
+    name: 'Silk Blouse',
+    price: 249,
+    description: 'Elegant silk blouse for formal occasions.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/9558699/pexels-photo-9558699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.5,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['White', 'Cream', 'Black']
+  },
+  {
+    id: 'w20',
+    name: 'Athletic Leggings',
+    price: 49.99,
+    description: 'High-performance athletic leggings with pockets.',
+    category: 'women',
+    image: 'https://images.pexels.com/photos/1972114/pexels-photo-1972114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1680&dpr=1',
+    rating: 4.7,
+    sizes: ['XS', 'S', 'M', 'L'],
+    colors: ['Black', 'Gray', 'Navy']
+  }
+]; 
