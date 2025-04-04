@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Product } from '@/types/product';
 import { useCart } from '@/context/CartContext';
+import { CartItem } from '@/types/cart';
 
 interface ProductDetailProps {
   product: Product;
@@ -10,6 +11,14 @@ interface ProductDetailProps {
 
 export default function ProductDetail({ product }: ProductDetailProps) {
   const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    const cartItem: CartItem = {
+      ...product,
+      quantity: 1
+    };
+    addToCart(cartItem);
+  };
 
   return (
     <div className="bg-white">
@@ -69,8 +78,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="mt-10 flex">
               <button
                 type="button"
-                onClick={() => addToCart(product)}
-                className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                onClick={handleAddToCart}
+                className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-amber-600 px-8 py-3 text-base font-medium text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
               >
                 Add to cart
               </button>
